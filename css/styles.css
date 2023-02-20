@@ -8,12 +8,15 @@
   --subtle-text: #8e8f99;
   --accent: #e7e9fc;
   --light: #f4f4fd;
+  --white: #ffffff;
   --modal-overlay: #2e2f42;
   --hero-background: #2e2f42;
 }
 
 body {
-  font-family: "Roboto", "sans-serif";
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white);
+  color: var(--dark);
 }
 
 /* Remove bullet points from lists */
@@ -22,9 +25,8 @@ body {
 }
 
 .main-header {
-  font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -34,12 +36,14 @@ body {
 /* Header */
 
 .logo {
+  text-transform: uppercase;
   color: var(--primary-brand);
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 2.8;
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
 
 .logo-dark {
@@ -56,40 +60,47 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+.address-link {
+  color: var(--text);
+  text-decoration: none;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.address-link:hover,
+.address-link:focus {
   color: var(--primary-brand);
 }
 
 /* Hero */
 
 .hero {
-  height: 600px;
   background-color: var(--hero-background);
 }
 
 .hero-title {
-  font-weight: 700;
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
 
 .hero-button {
-  width: 169px;
-  height: 56px;
-  color: white;
+  color: var(--white);
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+  font-family: inherit;
   background-color: var(--primary-brand);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -102,32 +113,38 @@ body {
 .core-header {
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
 }
 
 .core-descr {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--dark);
+  color: var(--text);
+}
+
+.team {
+  background-color: var(--light);
+}
+
+.team-list-item {
+  background-color: var(--white);
 }
 
 .team-list-name {
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark);
 }
 
 .team-list-role {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark);
@@ -138,9 +155,8 @@ body {
 }
 
 .footer-descr {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--accent);
 }
@@ -154,7 +170,8 @@ body {
   color: var(--primary-brand);
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  font-family: inherit;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
 }
@@ -165,24 +182,41 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.product-selection-button.active:hover,
-.product-selection-button.active:focus {
-  background: var(--pressed-state);
+.product-selection-button:hover,
+.product-selection-button:focus {
+  background: var(--primary-brand);
+  color: var(--white);
 }
 
-.row-list-title {
+.work-item-title {
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
 }
 
-.row-list-type {
+.work-item-type {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-
   color: var(--text);
+}
+
+.work-item-link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
