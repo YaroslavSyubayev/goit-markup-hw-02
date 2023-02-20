@@ -1,0 +1,186 @@
+/* Variables (color definitions) */
+:root {
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --modal-overlay: #2e2f42;
+  --hero-background: #2e2f42;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+}
+
+/* Remove bullet points from lists */
+.list {
+  list-style: none;
+}
+
+.main-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark);
+}
+
+/* Header */
+
+.logo {
+  color: var(--primary-brand);
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.logo-dark {
+  color: var(--dark);
+}
+
+.logo-light {
+  color: var(--light);
+}
+
+.header-link {
+  color: var(--dark);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--primary-brand);
+}
+
+/* Hero */
+
+.hero {
+  height: 600px;
+  background-color: var(--hero-background);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.hero-button {
+  width: 169px;
+  height: 56px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--primary-brand);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--pressed-state);
+}
+
+/* Core Points */
+
+.core-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+
+.core-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+
+.team-list-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+
+.team-list-role {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+
+.footer {
+  background-color: var(--hero-background);
+}
+
+.footer-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+}
+
+.product-selection-button {
+  width: 116px;
+  height: 48px;
+  background: var(--light);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  color: var(--primary-brand);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+.product-selection-button.active {
+  background: var(--primary-brand);
+  color: var(--light);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.product-selection-button.active:hover,
+.product-selection-button.active:focus {
+  background: var(--pressed-state);
+}
+
+.row-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+
+.row-list-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+
+  color: var(--text);
+}
